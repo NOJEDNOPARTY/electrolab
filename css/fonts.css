@@ -1,0 +1,43 @@
+/* Gotham Pro */
+@font-face {
+    font-family: 'Gotham Pro Bold';
+    src: url('./fonts/gothamPro/GothamPro-Bold.woff2') format('woff2'),
+        url('./fonts/gothamPro/GothamPro-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gotham Pro Medium';
+    src: url('./fonts/gothamPro/GothamPro-Medium.woff2') format('woff2'),
+        url('./fonts/gothamPro/GothamPro-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gotham Pro Black';
+    src: url('./fonts/gothamPro/GothamPro-Black.woff2') format('woff2'),
+        url('./fonts/gothamPro/GothamPro-Black.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gotham Pro Regular';
+    src: url('./fonts/gothamPro/GothamPro.woff2') format('woff2'),
+        url('./fonts/gothamPro/GothamPro.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* Didact */
+
+@font-face {
+    font-family: 'Didact Gothic Regular';
+    src: url('./fonts/didactGothic/DidactGothic-Regular.woff2') format('woff2'),
+        url('./fonts/didactGothic/DidactGothic-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
