@@ -5,10 +5,11 @@ var common = {
 	main: function(){
 		var bLazy = new Blazy({});
 
-		// $('.menu-trigger').click(function(event){
-		// 	event.preventDefault();
-		// 	$('header').toggleClass('open');
-		// })
+		$('.menu-trigger').click(function(event){
+			event.preventDefault();
+			$(this).toggleClass('open');
+			$('header').toggleClass('open');
+		})
 
 		$('.phone-mask').mask("+7 (999) 999-99-99");
 
@@ -16,7 +17,8 @@ var common = {
 			event.preventDefault();
 			var id  = $(this).attr('href'),
 			top = $(id).offset().top;
-			$('body,html').animate({scrollTop: top}, 3000);
+			$('body,html').animate({scrollTop: top - 50}, 3000);
+			$('.menu-trigger').removeClass('open');
 			$('header').removeClass('open');
 		});
 
@@ -30,6 +32,13 @@ var common = {
 		$('.consultation-btn').click(function(event){
 			event.preventDefault();
 			$('#consultationPopup').addClass('active');
+			$('.menu-trigger').removeClass('open');
+			$('header').removeClass('open');
+		});
+		$('.politics-btn').click(function(event){
+			event.preventDefault();
+			$('.popup-wrapper').removeClass('active');
+			$('#politicsPopup').addClass('active');
 		});
 
 		$('.callback').click(function(event){
@@ -41,6 +50,12 @@ var common = {
 			event.preventDefault();
 			$('.popup-wrapper').removeClass('active');
 		});
+
+		if($(window).width() < 768) {
+			$('.header-mob').addClass('fixed');
+			$('body').css({'margin-top':$('.header-mob').height()})
+		}
+
 	}
 };
 
