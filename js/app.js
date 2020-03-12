@@ -9,9 +9,8 @@ var common = {
 		// 	event.preventDefault();
 		// 	$('header').toggleClass('open');
 		// })
-		
 
-		// $('.phone-mask').mask("+380(99) 999-99-99");
+		$('.phone-mask').mask("+7 (999) 999-99-99");
 
 		$('.anchor').click(function(event){
 			event.preventDefault();

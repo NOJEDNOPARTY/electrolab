@@ -35,13 +35,13 @@
 
     <header>
         <nav>
-            <a href="#">Испытания</a>
-            <a href="#">Допуски</a>
-            <a href="#">Порядок работы</a>
-            <a href="#">Стоимость</a>
-            <a href="#">Лаборатория</a>
-            <a href="#">Примеры работ</a>
-            <a href="#">Контакты</a>
+            <a class="anchor" href="#trials">Испытания</a>
+            <a class="anchor" href="#license">Допуски</a>
+            <a class="anchor" href="#order">Порядок работы</a>
+            <a class="anchor" href="#price">Стоимость</a>
+            <a class="anchor" href="#laboratories">Лаборатория</a>
+            <a class="anchor" href="#portfolio">Примеры работ</a>
+            <a class="anchor" href="#footer">Контакты</a>
         </nav>
         <div class="header-bottom">
             <div class="wrapper">
@@ -94,7 +94,7 @@
             </div>
         </div>
     </section>
-    <section class="trials">
+    <section id="trials" class="trials">
         <div class="wrapper">
             <h2 class="title">ОБЯЗАТЕЛЬНЫЕ <br> ИСПЫТАНИЯ ЗА 24 ЧАСА</h2>
             <div class="trials-list">
@@ -452,6 +452,176 @@
             </div>
         </div>
     </section>
+    <section id="calculations" class="calculations b-lazy" style="background-image: url('./images/calculations-bg.jpg');">
+        <div class="wrapper">
+            <form action="#">
+                <h2 class="form-title">Рассчитать стоимость испытаний</h2>
+                <div class="form-columns">
+                    <div class="form-column">
+                        <div class="form-column-title">1. Технические данные для расчета</div>
+                        <input class="form-field" type="text" name="appointment" placeholder="Назначение объекта (магазин, офис, общепит...)">
+                        <input class="form-field" type="text" name="area" placeholder="Примерная площадь (кв.м)">
+                        <input class="form-field" type="text" name="shields" placeholder="Количество щитов">
+                    </div>
+                    <div class="form-column">
+                        <div class="form-column-title">2. Контактные данные</div>
+                        <input class="form-field" type="text" name="name" placeholder="Имя*">
+                        <input class="form-field phone-mask" type="tel" name="tel" placeholder="Телефон*">
+                        <input class="form-field" type="email" name="email" placeholder="E-mail*">
+                    </div>
+                </div>
+                <input class="btn btn-red callback" type="submit" value="Отправить данные для расчета">
+                <label class="checkbox-item">
+                    <input type="checkbox" checked name="politics">
+                    <span class="checker"><img src="./images/checker.svg" alt="checker"></span>
+                    <span class="checker-name">Я согласен с политикой обработки персональных данных</span>
+                </label>
+            </form>
+        </div>
+    </section>
+    <section id="price" class="section price">
+        <div class="wrapper">
+            <h2 class="title">СТОИМОСТЬ <br> УСЛУГ</h2>
+            <table class="price-list">
+                <tr>
+                    <th>Услуга</th>
+                    <th>Стоимость</th>
+                    <th>Ед. измерения</th>
+                </tr>
+                <tr>
+                    <td>Визуальный осмотр</td>
+                    <td>200 р.</td>
+                    <td>щит</td>
+                </tr>
+                <tr>
+                    <td>Измерение сопротивления изоляции проводов, кабель 1ф</td>
+                    <td>110 р.</td>
+                    <td>линия</td>
+                </tr>
+                <tr>
+                    <td>Измерение сопротивления изоляции проводов, кабель 3ф</td>
+                    <td>135 р.</td>
+                    <td>линия</td>
+                </tr>
+                <tr>
+                    <td>Замер полного сопротивления цепи «фаза-нуль»</td>
+                    <td>105 р.</td>
+                    <td>токоприемник</td>
+                </tr>
+                <tr>
+                    <td>Проверка работы УЗО 1ф</td>
+                    <td>105 р.</td>
+                    <td>шт</td>
+                </tr>
+                <tr>
+                    <td>Проверка работы УЗО 3ф</td>
+                    <td>155 р.</td>
+                    <td>шт</td>
+                </tr>
+                <tr>
+                    <td>Проверка действия расцепителей 1ф АВ</td>
+                    <td>85 р.</td>
+                    <td>шт</td>
+                </tr>
+                <tr>
+                    <td>Проверка действия расцепителей 3ф АВ до 50А</td>
+                    <td>135 р.</td>
+                    <td>шт</td>
+                </tr>
+                <tr>
+                    <td>Проверка действия расцепителей 3ф АВ до 200А</td>
+                    <td>205 р.</td>
+                    <td>шт</td>
+                </tr>
+                <tr>
+                    <td>Проверка действия расцепителей 3ф АВ до 1000А</td>
+                    <td>305 р.</td>
+                    <td>шт</td>
+                </tr>
+                <tr>
+                    <td>Проверка действия расцепителей 3ф АВ 10000А</td>
+                    <td>390 р.</td>
+                    <td>шт</td>
+                </tr>
+                <tr>
+                    <td>Испытание непрерывности заземляющих проводников</td>
+                    <td>55 р.</td>
+                    <td>точка</td>
+                </tr>
+                <tr>
+                    <td>Проверка срабатывания АВР, контакторная схема</td>
+                    <td>4200 р.</td>
+                    <td>шт</td>
+                </tr>
+                <tr>
+                    <td>Проверка срабатывания АВР на моторных приводах</td>
+                    <td>6400 р.</td>
+                    <td>шт</td>
+                </tr>
+                <tr>
+                    <td>Измерение сопротивления контура заземления</td>
+                    <td>750 р.</td>
+                    <td>шт</td>
+                </tr>
+                <tr>
+                    <td>Определение адресации потребителей</td>
+                    <td>150 р.</td>
+                    <td>гр</td>
+                </tr>
+                <tr>
+                    <td>Составление однолинейной схемы (до 30 АВ)</td>
+                    <td>2000 р.</td>
+                    <td>щит</td>
+                </tr>
+                <tr>
+                    <td>Составление однолинейной схемы (до 100 АВ)</td>
+                    <td>4000 р.</td>
+                    <td>щит</td>
+                </tr>
+                <tr>
+                    <td>Выезд за пределы КАД</td>
+                    <td>30 р.</td>
+                    <td>км</td>
+                </tr>
+            </table>
+        </div>
+    </section>
+    <section id="laboratories" class="laboratories b-lazy" style="background-image: url('./images/laboratories-bg.png');">
+        <div class="wrapper">
+            <div class="laboratories-block">
+                <div class="laboratories-cnt">
+                    <h2 class="title">ЛАБОРАТОРИИ  <br>"СМК ЭНЕРГИЯ" - 8 ЛЕТ</h2>
+                    <p class="laboratories-subtitle">За это время мы провели электротехнические испытания и замеры на ХХ объектах Санкт-Петербурга, Ленинградской области и Северо-Западного региона. </p>
+                    <p class="laboratories-quote">Мы уточнили у наших клиентов: почему они выбрали нас?</p>
+                    <div class="laboratories-benefits">
+                        <div class="laboratories-bnf">
+                            <div class="laboratories-bnf-img"><img src="./images/laboratories-bnf-1.svg" alt="laboratories-bnf"></div>
+                            <div class="laboratories-bnf-title">Электромонтажный отдел</div>
+                            <p>Работаем <span>быстро и без посредников.</span> <br>Можем исправить недостатки собственными силами.</p>
+                        </div>
+                        <div class="laboratories-bnf">
+                            <div class="laboratories-bnf-img"><img src="./images/laboratories-bnf-2.svg" alt="laboratories-bnf"></div>
+                            <div class="laboratories-bnf-title">Надежное оборудование</div>
+                            <p>Наши <span>новые и современные приборы</span> <br> прошли поверку в РосТесте.</p>
+                        </div>
+                        <div class="laboratories-bnf">
+                            <div class="laboratories-bnf-img"><img src="./images/laboratories-bnf-3.svg" alt="laboratories-bnf"></div>
+                            <div class="laboratories-bnf-title">Лицензии</div>
+                            <p>У лаборатории  <span>есть все лицензии, свидетельства и<br> аккредитация</span> в Ростехнадзоре.</p>
+                        </div>
+                        <div class="laboratories-bnf">
+                            <div class="laboratories-bnf-img"><img src="./images/laboratories-bnf-4.svg" alt="laboratories-bnf"></div>
+                            <div class="laboratories-bnf-title">Репутация</div>
+                            <p><span>Нам доверяют</span> работу крупнейшие предприятия и <br> ведущие представители бизнеса.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="laboratories-img">
+                    <img src="./images/laboratories-img.png" alt="laboratories-img">
+                </div>
+            </div>
+        </div>
+    </section>
     <section class="double-block b-lazy" style="background-image: url('./images/double-bg.jpg');">
         <div class="wrapper">
             <div id="clients" class="clients">
@@ -477,13 +647,152 @@
                 </div>
             </div>
             <div id="portfolio" class="portfolio">
-                
+                <h2 class="title">ПОРТФОЛИО</h2>
+                <p class="portfolio-subtitle">Примеры выполненных работ <br> на объектах различного назначения</p>
+                <div class="portfolio-list">
+                    <div class="portfolio-item">
+                        <div class="portfolio-img">
+                            <img src="./images/portfolio-item-1.jpg" alt="portfolio-item">
+                        </div>
+                        <div class="portfolio-cnt">
+                            <div class="portfolio-cnt-title">Жилой дом</div>
+                            <div class="portfolio-cnt-subtitle">Жилой дом со встроенными помещениями и заглубленной автостоянкой по адресу: 10-я Советская ул., д.8, литер А.</div>
+                            <hr>
+                            <p class="portfolio-cnt-text">Комплекс приемо-сдаточных испытаний и получение разрешения на допуск электроустановки в эксплуатацию в Ростехнадзоре.</p>
+                            <div class="portfolio-info">
+                                <img src="./images/services-info.svg" alt="portfolio-info">
+                                У меня похожая задача
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portfolio-item">
+                        <div class="portfolio-img">
+                            <img src="./images/portfolio-item-2.jpg" alt="portfolio-item">
+                        </div>
+                        <div class="portfolio-cnt">
+                            <div class="portfolio-cnt-title">Судостроительный завод</div>
+                            <div class="portfolio-cnt-subtitle">АО Средне-Невский судостроительный завод</div>
+                            <hr>
+                            <p class="portfolio-cnt-text">Периодические испытания заземления балочных кранов завода.</p>
+                            <div class="portfolio-info">
+                                <img src="./images/services-info.svg" alt="portfolio-info">
+                                У меня похожая задача
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portfolio-item">
+                        <div class="portfolio-img">
+                            <img src="./images/portfolio-item-3.jpg" alt="portfolio-item">
+                        </div>
+                        <div class="portfolio-cnt">
+                            <div class="portfolio-cnt-title">Экспо-центр</div>
+                            <div class="portfolio-cnt-subtitle">ООО ЭКСПО-Ресурс</div>
+                            <hr>
+                            <p class="portfolio-cnt-text">Проведение периодических испытаний электроустановки административного, складского и охранных помещений.</p>
+                            <div class="portfolio-info">
+                                <img src="./images/services-info.svg" alt="portfolio-info">
+                                У меня похожая задача
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portfolio-item">
+                        <div class="portfolio-img">
+                            <img src="./images/portfolio-item-1.jpg" alt="portfolio-item">
+                        </div>
+                        <div class="portfolio-cnt">
+                            <div class="portfolio-cnt-title">Жилой дом</div>
+                            <div class="portfolio-cnt-subtitle">Жилой дом со встроенными помещениями и заглубленной автостоянкой по адресу: 10-я Советская ул., д.8, литер А.</div>
+                            <hr>
+                            <p class="portfolio-cnt-text">Комплекс приемо-сдаточных испытаний и получение разрешения на допуск электроустановки в эксплуатацию в Ростехнадзоре.</p>
+                            <div class="portfolio-info">
+                                <img src="./images/services-info.svg" alt="portfolio-info">
+                                У меня похожая задача
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portfolio-item">
+                        <div class="portfolio-img">
+                            <img src="./images/portfolio-item-2.jpg" alt="portfolio-item">
+                        </div>
+                        <div class="portfolio-cnt">
+                            <div class="portfolio-cnt-title">Судостроительный завод</div>
+                            <div class="portfolio-cnt-subtitle">АО Средне-Невский судостроительный завод</div>
+                            <hr>
+                            <p class="portfolio-cnt-text">Периодические испытания заземления балочных кранов завода.</p>
+                            <div class="portfolio-info">
+                                <img src="./images/services-info.svg" alt="portfolio-info">
+                                У меня похожая задача
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portfolio-item">
+                        <div class="portfolio-img">
+                            <img src="./images/portfolio-item-3.jpg" alt="portfolio-item">
+                        </div>
+                        <div class="portfolio-cnt">
+                            <div class="portfolio-cnt-title">Экспо-центр</div>
+                            <div class="portfolio-cnt-subtitle">ООО ЭКСПО-Ресурс</div>
+                            <hr>
+                            <p class="portfolio-cnt-text">Проведение периодических испытаний электроустановки административного, складского и охранных помещений.</p>
+                            <div class="portfolio-info">
+                                <img src="./images/services-info.svg" alt="portfolio-info">
+                                У меня похожая задача
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
     <section id="map" class="map">
-        
+        <iframe src="https://yandex.ru/map-widget/v1/-/CKelU4MV" frameborder="1" allowfullscreen="true" style="position:relative;"></iframe></div>
     </section>
+    <footer id="footer"  class="footer b-lazy" style="background-image: url('./images/footer-bg.jpg');">
+        <div class="wrapper">
+            <div class="footer-columns">
+                <div class="footer-column">
+                    <a href="#" class="footer-logo"><img src="./images/footer-logo.svg" alt="footer-logo"></a>
+                    <p></p>
+                    <p>ЭЛЕКТРОЛАБОРАТОРИЯ <br> «СМК ЭНЕРГИЯ»</p>
+                    <p>г. Санкт-Петербург, ул. Магнитогорская<br> д.51 Лит Ж, БЦ Магнитка офис 421,<br> четвертый этаж Ладожская <br> </p>
+                </div>
+                <div class="footer-services">
+                    <div class="footer-column-title">Услуги</div>
+                    <div class="footer-services-list">
+                        <div class="footer-services-list-column">
+                            <p>Подготовка к проверке <br> Ростехнадзора</p>
+                            <p>Измерение <br> сопротивления изоляции</p>
+                            <p>Испытание систем <br> молниезащиты</p>
+                        </div>
+                        <div class="footer-services-list-column">
+                            <p>Испытание заземления</p>
+                            <p>Проверка металлосвязи</p>
+                            <p>Измерение цепи <br> фаза-ноль</p>
+                        </div>
+                        <div class="footer-services-list-column">
+                            <p>Визуальный осмотр <br> электроустановки</p>
+                            <p>Проверка температуры нагрева <br> оборудования и кабелей</p>
+                            <p>Измерение тока нагрузки</p>
+                        </div>
+                        <div class="footer-services-list-column">
+                            <p>Проверка <br> работоспособности АВР</p>
+                            <p>Проверка срабатывания УЗО</p>
+                            <p>Испытание автоматических <br> выключателей</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-contacts">
+                    <div class="footer-column-title">Контакты</div>
+                    <a href="tel:+7XXXXXXXXXX" class="footer-column-link">+7 (XXX) XXX-XX-XX</a>
+                    <div class="footer-contacts-row">
+                        <p>Режим работы:</p>
+                        <p>ПН-ПТ: с 9:00 до 19:00</p>
+                    </div>
+                    <a class="footer-contacts-link" href="mailto:XXX@XXX-X.XX">XXX@XXX-X.XX</a>
+                </div>
+            </div>
+        </div>
+    </footer>
     <!-- <div id="formPopup" class="popup-wrapper">
         <div class="popup-layout">
             <div class="popup">
