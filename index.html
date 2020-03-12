@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -54,7 +54,7 @@
                     <img src="./images/phone.svg" alt="logo">
                     <a href="tel:+7XXXXXXXXXX">+7 (XXX) XXX-XX-XX</a>
                 </div>
-                <a href="#" class="btn btn-white callback">Бесплатная консультация</a>
+                <a href="#" class="btn btn-white consultation-btn">Бесплатная консультация</a>
             </div>
         </div>
     </header>
@@ -448,7 +448,7 @@
                     <img src="./images/help.svg" alt="help">
                     Оставить заявку
                 </a>
-                <a href="#services" class="order-link anchor">Рассчитать стоимость</a>
+                <a href="#calculations" class="order-link anchor">Рассчитать стоимость</a>
             </div>
         </div>
     </section>
@@ -474,7 +474,7 @@
                 <label class="checkbox-item">
                     <input type="checkbox" checked name="politics">
                     <span class="checker"><img src="./images/checker.svg" alt="checker"></span>
-                    <span class="checker-name">Я согласен с политикой обработки персональных данных</span>
+                    <span class="checker-name">Я согласен с <a href="#">политикой обработки персональных данных</a></span>
                 </label>
             </form>
         </div>
@@ -643,7 +643,7 @@
                 <div class="clients-info">
                     <p class="clients-info-text">...и еще <span>ХХ</span> компаний</p>
                     <p>доверяют проверки нашей лаборатории</p>
-                    <a href="" class="clients-link callback">Начать сотрудничество</a>
+                    <a href="" class="clients-link consultation-btn">Начать сотрудничество</a>
                 </div>
             </div>
             <div id="portfolio" class="portfolio">
@@ -651,9 +651,9 @@
                 <p class="portfolio-subtitle">Примеры выполненных работ <br> на объектах различного назначения</p>
                 <div class="portfolio-list">
                     <div class="portfolio-item">
-                        <div class="portfolio-img">
+                        <a href="./images/portfolio-item-1.jpg" data-fancybox="images" class="portfolio-img">
                             <img src="./images/portfolio-item-1.jpg" alt="portfolio-item">
-                        </div>
+                        </a>
                         <div class="portfolio-cnt">
                             <div class="portfolio-cnt-title">Жилой дом</div>
                             <div class="portfolio-cnt-subtitle">Жилой дом со встроенными помещениями и заглубленной автостоянкой по адресу: 10-я Советская ул., д.8, литер А.</div>
@@ -666,9 +666,9 @@
                         </div>
                     </div>
                     <div class="portfolio-item">
-                        <div class="portfolio-img">
+                        <a href="./images/portfolio-item-2.jpg" data-fancybox="images" class="portfolio-img">
                             <img src="./images/portfolio-item-2.jpg" alt="portfolio-item">
-                        </div>
+                        </a>
                         <div class="portfolio-cnt">
                             <div class="portfolio-cnt-title">Судостроительный завод</div>
                             <div class="portfolio-cnt-subtitle">АО Средне-Невский судостроительный завод</div>
@@ -681,9 +681,9 @@
                         </div>
                     </div>
                     <div class="portfolio-item">
-                        <div class="portfolio-img">
+                        <a href="./images/portfolio-item-3.jpg" data-fancybox="images" class="portfolio-img">
                             <img src="./images/portfolio-item-3.jpg" alt="portfolio-item">
-                        </div>
+                        </a>
                         <div class="portfolio-cnt">
                             <div class="portfolio-cnt-title">Экспо-центр</div>
                             <div class="portfolio-cnt-subtitle">ООО ЭКСПО-Ресурс</div>
@@ -696,9 +696,9 @@
                         </div>
                     </div>
                     <div class="portfolio-item">
-                        <div class="portfolio-img">
+                        <a href="./images/portfolio-item-4.jpg" data-fancybox="images" class="portfolio-img">
                             <img src="./images/portfolio-item-1.jpg" alt="portfolio-item">
-                        </div>
+                        </a>
                         <div class="portfolio-cnt">
                             <div class="portfolio-cnt-title">Жилой дом</div>
                             <div class="portfolio-cnt-subtitle">Жилой дом со встроенными помещениями и заглубленной автостоянкой по адресу: 10-я Советская ул., д.8, литер А.</div>
@@ -711,9 +711,9 @@
                         </div>
                     </div>
                     <div class="portfolio-item">
-                        <div class="portfolio-img">
+                        <a href="./images/portfolio-item-5.jpg" data-fancybox="images" class="portfolio-img">
                             <img src="./images/portfolio-item-2.jpg" alt="portfolio-item">
-                        </div>
+                        </a>
                         <div class="portfolio-cnt">
                             <div class="portfolio-cnt-title">Судостроительный завод</div>
                             <div class="portfolio-cnt-subtitle">АО Средне-Невский судостроительный завод</div>
@@ -726,9 +726,9 @@
                         </div>
                     </div>
                     <div class="portfolio-item">
-                        <div class="portfolio-img">
+                        <a href="./images/portfolio-item-6.jpg" data-fancybox="images" class="portfolio-img">
                             <img src="./images/portfolio-item-3.jpg" alt="portfolio-item">
-                        </div>
+                        </a>
                         <div class="portfolio-cnt">
                             <div class="portfolio-cnt-title">Экспо-центр</div>
                             <div class="portfolio-cnt-subtitle">ООО ЭКСПО-Ресурс</div>
@@ -744,9 +744,9 @@
             </div>
         </div>
     </section>
-    <section id="map" class="map">
-        <iframe src="https://yandex.ru/map-widget/v1/-/CKelU4MV" frameborder="1" allowfullscreen="true" style="position:relative;"></iframe></div>
-    </section>
+    <div id="map" class="map">
+        <iframe class="b-lazy" data-src="https://yandex.ru/map-widget/v1/-/CKelU4MV" height="457" frameborder="1" allowfullscreen="true" style="position:relative;"></iframe>
+    </div>
     <footer id="footer"  class="footer b-lazy" style="background-image: url('./images/footer-bg.jpg');">
         <div class="wrapper">
             <div class="footer-columns">
@@ -793,36 +793,64 @@
             </div>
         </div>
     </footer>
-    <!-- <div id="formPopup" class="popup-wrapper">
+    <div id="orderPopup" class="popup-wrapper">
         <div class="popup-layout">
             <div class="popup">
-                <div class="popup-img"><img src="./images/popup-img.png" alt="popup-img"></div>
+                <div class="popup-header">Оставить заявку</div>
                 <div class="popup-cnt">
-                    <form action="">
-                        <div class="popup-title">Оставьте заявку</div>
-                        <div class="popup-subtitle">чтобы получить уникальное предложение</div>
-                        <input type="text" placeholder="Введите Ваше имя.." class="field field-name">
-                        <input type="tel" placeholder="Введите номер телефона ... " class="field phone-mask">
-                        <input class="btn" type="submit" value="Отправить">
+                    <form action="#">
+                        <p>Мы перезвоним через 15 минут, рассчитаем стоимость услуги <br> и отправим мастера на объект.</p>
+                        <label class="form-row">
+                            <input class="form-field" type="text" name="name">
+                            <span>Имя<span>*</span></span>
+                        </label>
+                        <label class="form-row">
+                            <input class="form-field phone-mask" type="tel" name="telephone">
+                            <span>Контактный телефон<span>*</span></span>
+                        </label>
+                        <div class="popup-form-buttons">
+                            <label class="checkbox-item">
+                                <input type="checkbox" checked name="politics">
+                                <span class="checker"><img src="./images/checker.svg" alt="checker"></span>
+                                <span class="checker-name">Я согласен с <a href="#">политикой обработки персональных данных</a></span>
+                            </label>
+                            <input class="btn btn-red" type="submit" value="Отправить">
+                        </div>
                     </form>
                 </div>
-                <div class="popup-close"><img src="./images/close-btn.svg" alt=""></div>
+                <div class="popup-close"><img src="./images/close-btn.svg" alt="close-btn"></div>
             </div>
         </div>
     </div>
-
-    <div id="thanksPopup" class="popup-wrapper">
+    <div id="consultationPopup" class="popup-wrapper">
         <div class="popup-layout">
             <div class="popup">
-                <div class="popup-img"><img src="./images/popup-img.png" alt="popup-img"></div>
+                <div class="popup-header">Мы позвоним в течение 15 минут <br>и ответим на ваши вопросы. </div>
                 <div class="popup-cnt">
-                    <div class="popup-title">Спасибо!</div>
-                    <div class="popup-subtitle">Мы свяжемся с вами в ближайшее время </div>
+                    <form action="#">
+                        <p>Мы перезвоним через 15 минут, рассчитаем стоимость услуги <br> и отправим мастера на объект.</p>
+                        <label class="form-row">
+                            <input class="form-field" type="text" name="name">
+                            <span>Имя<span>*</span></span>
+                        </label>
+                        <label class="form-row">
+                            <input class="form-field phone-mask" type="tel" name="telephone">
+                            <span>Контактный телефон<span>*</span></span>
+                        </label>
+                        <div class="popup-form-buttons">
+                            <label class="checkbox-item">
+                                <input type="checkbox" checked name="politics">
+                                <span class="checker"><img src="./images/checker.svg" alt="checker"></span>
+                                <span class="checker-name">Я согласен с <a href="#">политикой обработки персональных данных</a></span>
+                            </label>
+                            <input class="btn btn-red" type="submit" value="Отправить">
+                        </div>
+                    </form>
                 </div>
-                <div class="popup-close"><img src="./images/close-btn.svg" alt=""></div>
+                <div class="popup-close"><img src="./images/close-btn.svg" alt="close-btn"></div>
             </div>
         </div>
-    </div> -->
+    </div>
 
     <script src="js/libs/jquery-3.3.1.min.js"></script>
     <script src="js/libs/jquery.maskedinput.min.js"></script>

@@ -20,15 +20,27 @@ var common = {
 			$('header').removeClass('open');
 		});
 
-		// $('.form-call').click(function(event){
-		// 	event.preventDefault();
-		// 	$('#formPopup').addClass('active');
-		// });
+		$('.form-row input').keyup(function(){
+			if($(this).val() == '') {
+				$(this).closest('.form-row').removeClass('active')
+			}else {$(this).closest('.form-row').addClass('active')}
+			
+		});
 
-		// $('.popup-close').click(function(event){
-		// 	event.preventDefault();
-		// 	$('.popup-wrapper').removeClass('active');
-		// });
+		$('.consultation-btn').click(function(event){
+			event.preventDefault();
+			$('#consultationPopup').addClass('active');
+		});
+
+		$('.callback').click(function(event){
+			event.preventDefault();
+			$('#orderPopup').addClass('active');
+		});
+
+		$('.popup-close').click(function(event){
+			event.preventDefault();
+			$('.popup-wrapper').removeClass('active');
+		});
 	}
 };
 
