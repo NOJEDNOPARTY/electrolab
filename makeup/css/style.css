@@ -55,6 +55,13 @@
 	color: #A03939;
 }
 
+header.fixed {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	z-index: 10;
+}
 
 header nav {
 	display: flex;
@@ -201,9 +208,9 @@ header nav a:not(:last-child) {margin-right: 31px;}
 
 .banner-callback-info {padding-top: 24px;}
 
-.banner-callback-info p {
+.banner-callback-info a {
 	padding-bottom: 8px;
-    font-family: 'Gotham Pro Regular';
+    font-family: 'Gotham Pro Medium';
 	font-size: 18px;
 	line-height: 18px;
 	text-decoration-line: underline;

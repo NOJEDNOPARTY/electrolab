@@ -54,6 +54,9 @@ var common = {
 		if($(window).width() < 768) {
 			$('.header-mob').addClass('fixed');
 			$('body').css({'margin-top':$('.header-mob').height()})
+		}else {
+			$('header').addClass('fixed');
+			$('body').css({'margin-top':$('header').height()})
 		}
 
 	}
