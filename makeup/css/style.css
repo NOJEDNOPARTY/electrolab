@@ -388,22 +388,17 @@ header nav a:not(:last-child) {margin-right: 31px;}
 	-webkit-box-orient: vertical;
 	width: 100%;
 	height: 40px;
-	margin-bottom: 38px;
     font-family: 'Gotham Pro Bold';
 	font-size: 20px;
 	line-height: 20px;
 	color: #232A33;
 }
 
-.service-item-title:after {
-	content: '';
-	position: absolute;
-	bottom: -20px;
-	left: 0;
-	width: 100%;
-	height: 2px;
-	background: #DDDBDB;
+.service-item hr {
+	margin: 20px 0 16px;
+	border: 1px solid #DDDBDB;
 }
+
 
 .service-item-cnt {
 	display: flex;
